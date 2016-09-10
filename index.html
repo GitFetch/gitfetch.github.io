@@ -4,7 +4,7 @@
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self';font-src 'self' https://fonts.gstatic.com">
 
     <title>Git Fetch Newsletter - All the latest version control news delivered to your inbox</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -28,11 +28,10 @@
     <link href="static/theme/assets/plugins/pace/pace-theme-flash.css" rel="stylesheet" type="text/css" />
     <link href="static/theme/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <link href="static/theme/assets/plugins/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css" />
-    <link href="static/theme/assets/plugins/swiper/css/swiper.css" rel="stylesheet" type="text/css" media="screen" />
     <!-- END PLUGINS -->
     <!-- BEGIN PAGES CSS -->
     <link class="main-stylesheet" href="static/theme/pages/css/pages.css" rel="stylesheet" type="text/css" />
-    <link class="main-stylesheet" href="static/theme/pages/css/pages-icons.css" rel="stylesheet" type="text/css" />
+    <link class="main-stylesheet" href="static/css/gitfetch.css" rel="stylesheet" type="text/css" />
     <!-- BEGIN PAGES CSS -->
   </head>
   <body class="pace-danger">
@@ -44,32 +43,31 @@
           <div class="container">
             <div class="row">
               <div class="col-sm-10 col-sm-offset-1">
-                <div class="text-center sm-p-t-30">
-                  <img src="assets/images/logo-header.png" width="152" height="21" data-src-retina="assets/images/logo_black_2x.png" alt="" class="m-b-30">
-                  <h1 class="font-montserrat text-uppercase hidden-xs">curated version control news</h1>
-                  <h2 class="font-montserrat text-uppercase visible-xs">curated version control news</h2>
-                  <h4>Sign up to receive the latest VCS news twice a month</h4>
+                <div class="text-center sm-p-t-30 hidden-xs">
+                  <img src="static/images/logo.png" width="248" alt="" class="m-b-30">
+                  <h1 class="font-montserrat text-uppercase"><span>version control news</span></h1>
+                  <h4><span>Sign up to receive the latest VCS news twice a month</span></h4>
+                </div>
+                <div class="text-center sm-p-t-30 visible-xs">
+                  <img src="static/images/logo.png" width="248" alt="" class="m-b-30">
+                  <h2 class="font-montserrat text-uppercase"><span>VCS news</span></h2>
+                  <h4><span>Get the latest VCS news</span></h4>
                 </div>
               </div>
             </div>
             <div class="row">
               <div class="col-md-8 col-md-offset-2">
                 <div class="row">
-                  <form class="m-t-40 m-b-5 clearfix">
-                    <div class="col-sm-5   p-r-5 sm-p-r-15">
-                      <div class="form-group form-group-default col-sm-12">
-                        <label>Your Name</label>
-                        <input type="email" class="form-control" placeholder="John Smith">
-                      </div>
-                    </div>
-                    <div class="col-sm-7  p-l-10 sm-p-l-15">
+                  <form action="//xyz.us14.list-manage.com/subscribe/post?u=44fe432d6712ca1c72453fa47&amp;id=df88654a7e" method="post" class="m-t-40 m-b-5 clearfix">
+                    <div class="col-sm-12  p-l-10 sm-p-l-15">
                       <div class="form-group form-group-default input-group input-group-attached col-xs-12">
                         <label>Email Address</label>
-                        <input type="email" class="form-control" placeholder="email@abc.com">
+                        <input type="email" name="EMAIL" class="form-control" placeholder="email@example.com">
                         <span class="input-group-btn">
-                       <button class="btn btn-danger  btn-cons" type="button">Sign Up</button>
-                    </span>
+                          <button class="btn btn-danger btn-cons" type="submit">Subscribe</button>
+                        </span>
                       </div>
+                      <p>Powered by <a href="http://eepurl.com/cfcsDs" title="MailChimp - email marketing made easy and fun">MailChimp</a></p>
                     </div>
                   </form>
                 </div>
@@ -87,43 +85,12 @@
         <div class="container">
           <div class="row">
             <div class="col-md-7">
-              <img alt="" src="assets/images/logo_black.png">
+              <img alt="Git Fetch" width="172px" src="static/images/logo-black.png">
             </div>
             <div class="col-md-5">
               <ul class="no-style fs-12 no-padding pull-right xs-pull-left xs-m-t-20">
-                <li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16 xs-no-padding"><i class="fa fa-facebook"></i></a></li>
-                <li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16"><i class="fa fa-twitter"></i></a></li>
-                <li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16"><i class="fa fa-dribbble"></i></a></li>
-                <li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16"><i class="fa fa-rss"></i></a></li>
-                <li class="inline no-padding"><a href="#" class="text-black p-l-30 fs-16"><i class="fa fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row m-t-30">
-            <div class="col-sm-3 col-xs-12 xs-m-b-20">
-              <p class="fs-14">23/4 ways Street. Station 322
-                <br> Ottawa Ontario K1AOB1
-                <br> Canada.
-              </p>
-            </div>
-            <div class="col-sm-3 col-xs-6 xs-m-b-20">
-              <ul class="no-style no-padding">
-                <li class="m-b-5 no-padding"><a class="link text-black " href="#"> Pages Blogs </a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Go Pro</a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Community Meetups</a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Become and Affiliate</a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Forums</a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Help and Support</a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">News feed</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-3 col-xs-6 xs-m-b-20">
-              <ul class="no-style no-padding">
-                <li class="m-b-5 no-padding"><a class="link text-black " href="#"> Help Center </a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Pages License Details</a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Contact us</a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Meet the team</a></li>
-                <li class="m-b-5 no-padding"><a class="link text-black" href="#">Terms & Conditions</a></li>
+                <li class="inline no-padding"><a href="https://www.facebook.com/gitfetch" class="text-black p-l-30 fs-16 xs-no-padding"><i class="fa fa-facebook"></i></a></li>
+                <li class="inline no-padding"><a href="https://twitter.com/gitfetchnews" class="text-black p-l-30 fs-16"><i class="fa fa-twitter"></i></a></li>
               </ul>
             </div>
           </div>
@@ -132,12 +99,8 @@
       <section class="p-t-10 p-b-10 bg-master-darkest">
         <div class="container">
           <div class="row">
-            <div class="col-sm-7">
-              <p class="fs-11 no-margin font-arial text-white small-text"><span class="hint-text">Exclusive only at</span> Envato Marketplace,Themeforest <span class="hint-text">See</span> Standard licenses &amp; Extended licenses
-              </p>
-            </div>
-            <div class="col-sm-5 text-right">
-              <p class="fs-11 no-margin font-arial text-white small-text">Copyright © 2014 REVOX. All Rights Reserved.
+            <div class="col-sm-5 col-sm-offset-7 text-right">
+              <p class="fs-11 no-margin font-arial text-white small-text">Copyright © 2016 Git Fetch. <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY NC ND</a>.
               </p>
             </div>
           </div>
